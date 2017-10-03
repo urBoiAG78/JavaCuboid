@@ -13,6 +13,7 @@ public class Cuboid <Numbers>{
     private Numbers lenght;
     private Numbers width;
     private Numbers height;
+    private Numbers volume;
 
     public Numbers getLenght() {
         return lenght;
@@ -36,6 +37,10 @@ public class Cuboid <Numbers>{
 
     public void setHeight(Numbers height) {
         this.height = height;
+    }
+    public double getVolume(){
+         volume = lenght * width * height;
+         return volume;
     }
     
     @Override
