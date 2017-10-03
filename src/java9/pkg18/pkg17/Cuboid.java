@@ -9,32 +9,32 @@ package java9.pkg18.pkg17;
  *
  * @author agonzalez
  */
-public class Cuboid <T>{
-    private T lenght;
-    private T width;
-    private T height;
+public class Cuboid <Numbers>{
+    private Numbers lenght;
+    private Numbers width;
+    private Numbers height;
 
-    public T getLenght() {
+    public Numbers getLenght() {
         return lenght;
     }
 
-    public T getWidth() {
+    public Numbers getWidth() {
         return width;
     }
 
-    public T getHeight() {
+    public Numbers getHeight() {
         return height;
     }
 
-    public void setLenght(T lenght) {
+    public void setLenght(Numbers lenght) {
         this.lenght = lenght;
     }
 
-    public void setWidth(T width) {
+    public void setWidth(Numbers width) {
         this.width = width;
     }
 
-    public void setHeight(T height) {
+    public void setHeight(Numbers height) {
         this.height = height;
     }
     
