@@ -38,7 +38,7 @@ public class Cuboid <Numbers>{
     public void setHeight(Numbers height) {
         this.height = height;
     }
-    public double getVolume(){
+    public Numbers getVolume(){
          volume = lenght * width * height;
          return volume;
     }
