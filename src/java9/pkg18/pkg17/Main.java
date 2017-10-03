@@ -37,6 +37,8 @@ public class Main {
         System.out.println(c1.getLenght()); 
         System.out.println(c1.getWidth());
         System.out.println(c1.toString());
+        /**
+         * this would work but the last try it changes the class to only accept numbers
         c2.setHeight("10");
         c2.setLenght("10");
         c2.setWidth("10");
@@ -44,6 +46,8 @@ public class Main {
         System.out.println(c2.getLenght());
         System.out.println(c2.getWidth());
         System.out.println(c2.toString());
+        */
+        
     }
     
 }
