@@ -11,11 +11,21 @@ package java9.pkg18.pkg17;
  * @param <T>
  */
 public class Cuboid <T extends Number>{
+    public Cuboid() {
+    }
+    
+    public Cuboid(T lenght, T width, T height) {
+        this.lenght = lenght;
+        this.width = width;
+        this.height = height;
+    }
     
     private T lenght;
     private T width;
     private T height;
     private double volume;
+
+    
 
     public T getLenght() {
         return lenght;
@@ -47,7 +57,7 @@ public class Cuboid <T extends Number>{
     
     @Override
     public String toString(){
-        return "Height is " + height + ". Width is " + width + ". Lenght is " + lenght;
+        return "Height is " + height + ". Width is " + width + ". Lenght is " + lenght + ". Volume is " + volume + ".";
     }
     
 }

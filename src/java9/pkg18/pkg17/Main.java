@@ -29,13 +29,11 @@ public class Main {
         //Add code here to fully test your Cuboid Class.
         //Be sure to test all constructors and methods.
         Cuboid<Double> c1 = new Cuboid<>();
-        Cuboid<String> c2 = new Cuboid<>();
-        c1.setWidth(10.0);
+        //Cuboid<String> c2 = new Cuboid<>();
+        c1.setWidth(1.21);
         c1.setLenght(10.0);
         c1.setHeight(10.0);
-        System.out.println(c1.getHeight());
-        System.out.println(c1.getLenght()); 
-        System.out.println(c1.getWidth());
+        c1.getVolume();
         System.out.println(c1.toString());
         /**
          * this would work but the last try it changes the class to only accept numbers
@@ -47,7 +45,10 @@ public class Main {
         System.out.println(c2.getWidth());
         System.out.println(c2.toString());
         */
-        
+       Cuboid<Integer> c2 = new Cuboid<>(10,10,10);
+       c2.getVolume();
+        System.out.println(c2.toString());
+       
     }
-    
 }
+
