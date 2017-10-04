@@ -8,39 +8,41 @@ package java9.pkg18.pkg17;
 /**
  *
  * @author agonzalez
+ * @param <T>
  */
-public class Cuboid <Numbers>{
-    private Numbers lenght;
-    private Numbers width;
-    private Numbers height;
-    private Numbers volume;
+public class Cuboid <T extends Number>{
+    
+    private T lenght;
+    private T width;
+    private T height;
+    private double volume;
 
-    public Numbers getLenght() {
+    public T getLenght() {
         return lenght;
     }
 
-    public Numbers getWidth() {
+    public T getWidth() {
         return width;
     }
 
-    public Numbers getHeight() {
+    public T getHeight() {
         return height;
     }
 
-    public void setLenght(Numbers lenght) {
+    public void setLenght(T lenght) {
         this.lenght = lenght;
     }
 
-    public void setWidth(Numbers width) {
+    public void setWidth(T width) {
         this.width = width;
     }
 
-    public void setHeight(Numbers height) {
+    public void setHeight(T height) {
         this.height = height;
     }
-    public Numbers getVolume(){
-         volume = lenght * width * height;
-         return volume;
+    public double getVolume(){
+        volume = lenght.doubleValue() * width.doubleValue() * height.doubleValue();
+        return volume;
     }
     
     @Override
